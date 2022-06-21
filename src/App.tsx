@@ -1,27 +1,27 @@
 import React from 'react';
+import {
+  Switch,
+  Route,
+  Redirect,
+} from 'react-router-dom';
 import './App.scss';
 
-interface Props {
-  onClick: () => void;
-}
+import { Header } from './Components/Header/Header';
+import { HomePage } from './Components/HomePage/HomePage';
+import { PeoplePage } from './Components/FetchingPeople/PeoplePage/PeoplePage';
+import { Goods } from './Components/ListOfGoods/Goods';
+import { NotFoundPage } from './Components/NotFoundPage/NotFoundPage';
 
-export const Provider: React.FC<Props> = React.memo(
-  ({ onClick, children }) => (
-    <button
-      type="button"
-      onClick={onClick}
-    >
-      {children}
-    </button>
-  ),
+export const App: React.FC = () => (
+  <div className="App">
+    <Header />
+
+    <Switch>
+      <Route path="/" exact component={HomePage} />
+      <Route path="/people" exact component={PeoplePage} />
+      <Route path="/goods" exact component={Goods} />
+      <Redirect path="/home" to="/" />
+      <NotFoundPage />
+    </Switch>
+  </div>
 );
-
-export const App: React.FC = () => {
-  return (
-    <div className="starter">
-      <Provider onClick={() => ({})}>
-        <TodoList />
-      </Provider>
-    </div>
-  );
-};
