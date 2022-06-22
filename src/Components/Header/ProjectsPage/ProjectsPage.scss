@@ -1,0 +1,26 @@
+.ProjectsPage {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    width: max-content;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      color: lightblue;
+      cursor: pointer;
+    }
+  }
+}
