@@ -7,4 +7,28 @@
     font-weight: bold;
     text-transform: uppercase;
   }
+
+  &__form {
+    padding: 10px 0;
+  }
+
+  &__input {
+    width: 150px;
+    height: 25px;
+  }
+
+  &__button {
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  &__friend {
+    width: max-content;
+    background-color: lightgreen;
+  }
+}
+
+p {
+  padding: 5px 0;
 }
