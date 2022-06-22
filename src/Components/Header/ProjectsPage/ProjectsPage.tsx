@@ -19,5 +19,12 @@ export const ProjectsPage: React.FC = () => (
     >
       Dynamic list of goods
     </NavLink>
+
+    <NavLink
+      className="ProjectsPage__link"
+      to="/clock"
+    >
+      Matrix clock
+    </NavLink>
   </div>
 );

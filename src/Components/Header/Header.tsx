@@ -11,7 +11,14 @@ export const Header: React.FC = () => (
         to="/"
         exact
       >
-        Home page
+        Welcome page
+      </NavLink>
+
+      <NavLink
+        className="Header__navlink"
+        to="/about"
+      >
+        About me
       </NavLink>
 
       <NavLink
