@@ -56,7 +56,12 @@ export const HomePage: React.FC = () => {
         </p>
         <p className="HomePage__text">Now we are friends</p>
         <p className="HomePage__text">You can start exploring my little WEB-world 🌍</p>
-        <a href="/#/projects" className="HomePage__link">Enjoy!</a>
+        <a
+          href="https://lem47.github.io/react-portfolio-project/#/projects"
+          className="HomePage__link"
+        >
+          Enjoy!
+        </a>
       </Modal>
     </>
   );
