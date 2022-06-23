@@ -7,17 +7,9 @@
   cursor: default;
 }
 
-body {
+.App {
   min-height: 100vh;
   min-height: -webkit-fill-available;
-}
-
-html {
-  height: -webkit-fill-available;
-}
-
-.App {
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }
