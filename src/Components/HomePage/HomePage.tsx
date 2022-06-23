@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import './HomePage.scss';
 
 import { Footer } from './Footer/Footer';
+import { Modal } from '../Modal/Modal';
 
 export const HomePage: React.FC = () => {
   const [visitor, setVisitor] = useState('');
-  const [meet, setMeet] = useState(false);
   const [visibleForm, setVisibleForm] = useState(true);
+  const [modalActive, setModalActive] = useState(false);
 
   return (
     <>
@@ -15,16 +16,18 @@ export const HomePage: React.FC = () => {
         <p>I am very glad to see you here 😊</p>
         <p>My name is Oleg</p>
         <p>Front-end developer from Ukraine 💛💙</p>
-        <p>So, let&apos;s get acquainted!</p>
         {visibleForm ? (
           <>
+            <p> </p>
+            <p> </p>
+            <p>So, let&apos;s get acquainted!</p>
             <p>What is your name?</p>
             <form
               className="HomePage__form"
               onSubmit={(event) => {
                 event.preventDefault();
-                setMeet(true);
                 setVisibleForm(false);
+                setModalActive(true);
               }}
             >
               <input
@@ -43,20 +46,18 @@ export const HomePage: React.FC = () => {
             </form>
           </>
         ) : (
-          <></>
-        )}
-        <p className="HomePage__friend">
-          {meet && `Nice to meet you, ${visitor}!`}
-        </p>
-        {meet && (
-          <>
-            <p>Now we are friends</p>
-            <p>You can start exploring my little WEB-world 🌍</p>
-            <p>Enjoy!</p>
-          </>
+          <p>Welcome!</p>
         )}
       </div>
       <Footer />
+      <Modal active={modalActive} setActive={setModalActive}>
+        <p>
+          {`Nice to meet you, ${visitor}!`}
+        </p>
+        <p>Now we are friends</p>
+        <p>You can start exploring my little WEB-world 🌍</p>
+        <a href="/#/projects" className="HomePage__link">Enjoy!</a>
+      </Modal>
     </>
   );
 };

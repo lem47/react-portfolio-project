@@ -1,6 +1,9 @@
 .HomePage {
   height: 100%;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &__title {
     padding-bottom: 20px;
@@ -23,9 +26,14 @@
     cursor: pointer;
   }
 
-  &__friend {
-    width: max-content;
+  &__link {
+    margin-top: 15px;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
     background-color: lightgreen;
+    border-radius: 5px;
   }
 }
 

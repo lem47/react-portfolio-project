@@ -4,9 +4,10 @@
   flex-direction: column;
 
   &__title {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     font-weight: bold;
     text-transform: uppercase;
+    text-decoration: underline;
   }
 
   &__link {
