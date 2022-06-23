@@ -1,4 +1,14 @@
 .Footer {
-  padding: 20px;
-  background-color: red;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: tomato;
+
+  &__text {
+    font-family: "Kalam", cursive;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
 }

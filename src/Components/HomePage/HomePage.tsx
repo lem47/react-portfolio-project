@@ -13,15 +13,15 @@ export const HomePage: React.FC = () => {
     <>
       <div className="HomePage">
         <h1 className="HomePage__title">Hello!</h1>
-        <p>I am very glad to see you here 😊</p>
-        <p>My name is Oleg</p>
-        <p>Front-end developer from Ukraine 💛💙</p>
+        <p className="HomePage__text">I am very glad to see you here 😊</p>
+        <p className="HomePage__text">My name is Oleg</p>
+        <p className="HomePage__text">Front-end developer from Ukraine 💛💙</p>
         {visibleForm ? (
           <>
-            <p> </p>
-            <p> </p>
-            <p>So, let&apos;s get acquainted!</p>
-            <p>What is your name?</p>
+            <br />
+            <br />
+            <p className="HomePage__text">So, let&apos;s get acquainted!</p>
+            <p className="HomePage__text">What is your name?</p>
             <form
               className="HomePage__form"
               onSubmit={(event) => {
@@ -41,21 +41,21 @@ export const HomePage: React.FC = () => {
                 required
               />
               <button type="submit" className="HomePage__button">
-                Say hi!
+                say hi!
               </button>
             </form>
           </>
         ) : (
-          <p>Welcome!</p>
+          <p className="HomePage__text">Welcome!</p>
         )}
       </div>
       <Footer />
       <Modal active={modalActive} setActive={setModalActive}>
-        <p>
+        <p className="HomePage__text">
           {`Nice to meet you, ${visitor}!`}
         </p>
-        <p>Now we are friends</p>
-        <p>You can start exploring my little WEB-world 🌍</p>
+        <p className="HomePage__text">Now we are friends</p>
+        <p className="HomePage__text">You can start exploring my little WEB-world 🌍</p>
         <a href="/#/projects" className="HomePage__link">Enjoy!</a>
       </Modal>
     </>
