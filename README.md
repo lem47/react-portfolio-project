@@ -1,1 +1,1 @@
-[DEMO LINK](https://lem47.github.io/react-portfolio-project/)
+[Welcome! Push me to enter](https://lem47.github.io/react-portfolio-project/)
