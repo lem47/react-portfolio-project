@@ -39,7 +39,7 @@ export const About: React.FC = () => (
       to="/projects"
       className="About__link"
     >
-      You can check it here
+      👉 You can check it here 👈
     </Link>
   </div>
 );
