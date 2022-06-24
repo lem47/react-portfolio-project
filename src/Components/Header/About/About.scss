@@ -9,4 +9,27 @@
     font-weight: bold;
     text-transform: uppercase;
   }
+
+  &__avatar {
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  &__maintext {
+    width: 350px;
+    padding-top: 20px;
+    font-size: 17px;
+  }
+
+  &__category {
+    padding: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+
+  &__text {
+    width: 300px;
+    font-size: 17px;
+  }
 }

@@ -5,7 +5,7 @@ import './NotFoundPage.scss';
 export const NotFoundPage: React.FC = () => (
   <div className="NotFoundPage">
     <img
-      src="https://media4.giphy.com/media/pVUPZS2Vj5GXfdBeKs/giphy.gif?cid=790b76117a0092eed1453634694416997582044132067f1e&rid=giphy.gif&ct=ts"
+      src="oops.gif"
       alt="oops, page not found"
       className="NotFoundPage__gif"
     />
