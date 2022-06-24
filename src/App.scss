@@ -1,14 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Akshar", sans-serif;
-  font-weight: normal;
-  cursor: default;
-}
-
 .App {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
