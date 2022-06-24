@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 export const ProjectsPage: React.FC = () => (
   <div className="ProjectsPage">
-    <h1 className="ProjectsPage__title">My React projects:</h1>
+    <h1 className="ProjectsPage__title">React projects:</h1>
     <NavLink
       className="ProjectsPage__link"
       to="/clock"
@@ -58,5 +58,12 @@ export const ProjectsPage: React.FC = () => (
     >
       Miami Condo Kings
     </a>
+    <br />
+    <NavLink
+      className="ProjectsPage__nextstep"
+      to="/contacts"
+    >
+      Like it? Tell me!
+    </NavLink>
   </div>
 );

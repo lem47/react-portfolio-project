@@ -37,6 +37,10 @@
     border: 2px solid black;
     background-color: white;
     cursor: pointer;
+
+    &.active {
+      background-color: lightgreen;
+    }
   }
 
   &__link {

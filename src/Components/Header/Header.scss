@@ -19,14 +19,16 @@
       color: yellow;
       cursor: pointer;
     }
+
+    &.active {
+      color: darkgray;
+    
+      &:hover {
+        color: darkgray;
+        cursor: default;
+      }
+    }
   }
 }
 
-.active {
-  color: darkgray;
 
-  &:hover {
-    color: darkgray;
-    cursor: default;
-  }
-}

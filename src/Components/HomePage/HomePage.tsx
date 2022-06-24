@@ -1,14 +1,29 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './HomePage.scss';
 
 import { Footer } from './Footer/Footer';
 import { Modal } from '../Modal/Modal';
 
+const debounce = (f: any, delay: any) => {
+  let timerId: any;
+
+  return (...args: any[]) => {
+    clearTimeout(timerId);
+    timerId = setTimeout(f, delay, ...args);
+  };
+};
+
 export const HomePage: React.FC = () => {
   const [visitor, setVisitor] = useState('');
+  const [appliedVisitor, setAppliedVisitor] = useState('');
   const [visibleForm, setVisibleForm] = useState(true);
   const [modalActive, setModalActive] = useState(false);
+
+  const applyVisitor = useCallback(
+    debounce(setAppliedVisitor, 1000),
+    [],
+  );
 
   return (
     <>
@@ -38,10 +53,14 @@ export const HomePage: React.FC = () => {
                 value={visitor}
                 onChange={(event) => {
                   setVisitor(event.target.value.trim().toUpperCase());
+                  applyVisitor(event.target.value.trim());
                 }}
                 required
               />
-              <button type="submit" className="HomePage__button">
+              <button
+                type="submit"
+                className={appliedVisitor ? 'HomePage__button active' : 'HomePage__button'}
+              >
                 say hi!
               </button>
             </form>
@@ -59,7 +78,7 @@ export const HomePage: React.FC = () => {
         <p className="HomePage__text">You can start exploring my little WEB-world 🌍</p>
         <NavLink
           className="HomePage__link"
-          to="/projects"
+          to="/about"
         >
           Enjoy!
         </NavLink>

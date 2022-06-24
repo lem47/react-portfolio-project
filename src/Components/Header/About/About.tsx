@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './About.scss';
 
 export const About: React.FC = () => (
@@ -32,6 +33,13 @@ export const About: React.FC = () => (
       <li className="About__text">With good sense of humor, I like to joke with colleagues 😉</li>
       <li className="About__text">I love aviation but I&apos;m afraid of heights ✈️</li>
       <li className="About__text">Adventures lover 🧭🏔️⛺📸</li>
+      <li className="About__text">And just a good web-developer 💻</li>
     </ul>
+    <NavLink
+      className="About__link"
+      to="/projects"
+    >
+      You can check it here
+    </NavLink>
   </div>
 );
