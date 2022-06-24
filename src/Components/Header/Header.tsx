@@ -7,30 +7,27 @@ export const Header: React.FC = () => (
   <header className="Header">
     <nav className="Header__nav">
       <NavLink
-        className="Header__navlink"
         to="/"
+        className="Header__navlink"
         exact
       >
         Welcome page
       </NavLink>
-
       <NavLink
-        className="Header__navlink"
         to="/about"
+        className="Header__navlink"
       >
         About me
       </NavLink>
-
       <NavLink
-        className="Header__navlink"
         to="/projects"
+        className="Header__navlink"
       >
         My projects
       </NavLink>
-
       <NavLink
-        className="Header__navlink"
         to="/contacts"
+        className="Header__navlink"
       >
         My contacts
       </NavLink>

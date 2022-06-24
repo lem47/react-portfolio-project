@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './HomePage.scss';
 
 import { Footer } from './Footer/Footer';
@@ -76,12 +76,12 @@ export const HomePage: React.FC = () => {
         </p>
         <p className="HomePage__text">Now we are friends</p>
         <p className="HomePage__text">You can start exploring my little WEB-world 🌍</p>
-        <NavLink
-          className="HomePage__link"
+        <Link
           to="/about"
+          className="HomePage__link"
         >
           Enjoy!
-        </NavLink>
+        </Link>
       </Modal>
     </>
   );

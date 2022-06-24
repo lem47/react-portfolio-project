@@ -1,29 +1,29 @@
 import React from 'react';
 import './ProjectsPage.scss';
 
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const ProjectsPage: React.FC = () => (
   <div className="ProjectsPage">
     <h1 className="ProjectsPage__title">React projects:</h1>
-    <NavLink
-      className="ProjectsPage__link"
+    <Link
       to="/clock"
+      className="ProjectsPage__link"
     >
       The Matrix clock
-    </NavLink>
-    <NavLink
-      className="ProjectsPage__link"
+    </Link>
+    <Link
       to="/people"
+      className="ProjectsPage__link"
     >
       Fetching people from server
-    </NavLink>
-    <NavLink
-      className="ProjectsPage__link"
+    </Link>
+    <Link
       to="/goods"
+      className="ProjectsPage__link"
     >
       Dynamic list of goods
-    </NavLink>
+    </Link>
     <a
       href="https://lem47.github.io/react_list-of-goods-hooks/"
       rel="noreferrer"
@@ -59,11 +59,11 @@ export const ProjectsPage: React.FC = () => (
       Miami Condo Kings
     </a>
     <br />
-    <NavLink
-      className="ProjectsPage__nextstep"
+    <Link
       to="/contacts"
+      className="ProjectsPage__nextstep"
     >
       Like it? Tell me!
-    </NavLink>
+    </Link>
   </div>
 );

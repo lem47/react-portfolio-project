@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './About.scss';
 
 export const About: React.FC = () => (
@@ -12,8 +12,8 @@ export const About: React.FC = () => (
     />
     <p className="About__maintext">
       I know how important the details are for a Front-end developer.
-      My keen attention to details and dedication to solving any problem at hand
-      are what separates me from other candidates with similar qualifications.
+      My keen attention to details and aspiration to solving any problem
+      are what separates me from other developers with similar qualifications.
     </p>
     <h2 className="About__category">SKILLS</h2>
     <ul>
@@ -35,11 +35,11 @@ export const About: React.FC = () => (
       <li className="About__text">Adventures lover 🧭🏔️⛺📸</li>
       <li className="About__text">And just a good web-developer 💻</li>
     </ul>
-    <NavLink
-      className="About__link"
+    <Link
       to="/projects"
+      className="About__link"
     >
       You can check it here
-    </NavLink>
+    </Link>
   </div>
 );

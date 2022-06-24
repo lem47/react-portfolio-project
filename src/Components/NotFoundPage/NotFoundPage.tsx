@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './NotFoundPage.scss';
 
 export const NotFoundPage: React.FC = () => (
@@ -9,11 +9,11 @@ export const NotFoundPage: React.FC = () => (
       alt="oops, page not found"
       className="NotFoundPage__gif"
     />
-    <NavLink
-      className="NotFoundPage__link"
+    <Link
       to="/"
+      className="NotFoundPage__link"
     >
       This button was created to help you
-    </NavLink>
+    </Link>
   </div>
 );
