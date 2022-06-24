@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import './HomePage.scss';
 
 import { Footer } from './Footer/Footer';
@@ -56,12 +57,12 @@ export const HomePage: React.FC = () => {
         </p>
         <p className="HomePage__text">Now we are friends</p>
         <p className="HomePage__text">You can start exploring my little WEB-world 🌍</p>
-        <a
-          href="https://lem47.github.io/react-portfolio-project/#/projects"
+        <NavLink
           className="HomePage__link"
+          to="/projects"
         >
           Enjoy!
-        </a>
+        </NavLink>
       </Modal>
     </>
   );

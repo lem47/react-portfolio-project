@@ -10,7 +10,7 @@ export const ProjectsPage: React.FC = () => (
       className="ProjectsPage__link"
       to="/clock"
     >
-      Matrix clock
+      The Matrix clock
     </NavLink>
     <NavLink
       className="ProjectsPage__link"

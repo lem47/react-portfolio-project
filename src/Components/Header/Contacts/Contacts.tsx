@@ -4,7 +4,7 @@ import './Contacts.scss';
 export const Contacts: React.FC = () => (
   <div className="Contacts">
     <img
-      src="https://media3.giphy.com/media/lp0k7hYzMYrsfbxmxJ/giphy.gif?cid=ecf05e47lx9bfrrd2lv66rn2ixohv4i35nsowdn8g8euo7ep&rid=giphy.gif&ct=g"
+      src="callme.gif"
       alt="call me please"
       className="Contacts__gif"
     />
@@ -22,6 +22,14 @@ export const Contacts: React.FC = () => (
       className="Contacts__link"
     >
       TELEGRAM: @lementarev
+    </a>
+    <a
+      href="https://www.instagram.com/lementarev/"
+      rel="noreferrer"
+      target="_blank"
+      className="Contacts__link"
+    >
+      INSTAGRAM: @lementarev
     </a>
     <a
       href="mailto:lementarev@gmail.com"

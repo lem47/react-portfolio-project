@@ -1,6 +1,28 @@
 .NotFoundPage {
-  padding: 20px;
-  color: red;
-  font-weight: bold;
-  text-transform: uppercase;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__gif {
+    width: 250px;
+    padding-bottom: 50px;
+  }
+
+  &__link {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: red;
+    border: 2px solid black;
+    border-radius: 5px;
+
+    &:hover {
+      color: green;
+      cursor: pointer;
+    }
+  }
 }
