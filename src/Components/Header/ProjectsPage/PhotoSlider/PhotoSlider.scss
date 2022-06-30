@@ -1,0 +1,37 @@
+.PhotoSlider {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__photo {
+    width: 750px;
+    height: 450px;
+    border-radius: 15px;
+  }
+
+  &__leftArrow {
+    margin-right: 75px;
+    font-size: 3rem;
+    color: black;
+    cursor: pointer;
+  }
+
+  &__rightArrow {
+    margin-left: 75px;
+    font-size: 3rem;
+    color: black;
+    cursor: pointer;
+  }
+
+  &__container {
+    opacity: 0;
+    transition-duration: 1s ease;
+
+    &.active {
+      opacity: 1;
+      transition-duration: 1s;
+      transform: scale(1.1);
+    }
+  }
+}

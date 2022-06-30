@@ -40,6 +40,12 @@ export const ProjectsPage: React.FC = () => (
     >
       Counter (with funny sound inside)
     </a>
+    <Link
+      to="/slider"
+      className="ProjectsPage__link"
+    >
+      Photo slider
+    </Link>
 
     <h1 className="ProjectsPage__title">Landing pages:</h1>
     <a
