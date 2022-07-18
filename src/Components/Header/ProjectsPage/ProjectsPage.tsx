@@ -40,6 +40,14 @@ export const ProjectsPage: React.FC = () => (
     >
       Counter (with funny sound inside)
     </a>
+    <a
+      href="https://lem47.github.io/loans_chi-software_code-test/"
+      rel="noreferrer"
+      target="_blank"
+      className="ProjectsPage__link"
+    >
+      Loans app
+    </a>
     <Link
       to="/slider"
       className="ProjectsPage__link"
