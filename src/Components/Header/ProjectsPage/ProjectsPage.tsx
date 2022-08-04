@@ -6,23 +6,35 @@ import { Link } from 'react-router-dom';
 export const ProjectsPage: React.FC = () => (
   <div className="ProjectsPage">
     <h1 className="ProjectsPage__title">React projects:</h1>
+    <a
+      href="https://lem47.github.io/delivery-app/"
+      rel="noreferrer"
+      target="_blank"
+      className="ProjectsPage__link"
+    >
+      Delivery app
+    </a>
+    <a
+      href="https://lem47.github.io/loans_chi-software_code-test/"
+      rel="noreferrer"
+      target="_blank"
+      className="ProjectsPage__link"
+    >
+      Loans app
+    </a>
+    <a
+      href="https://lem47.github.io/memoria-press-app-test/"
+      rel="noreferrer"
+      target="_blank"
+      className="ProjectsPage__link"
+    >
+      School journal
+    </a>
     <Link
       to="/clock"
       className="ProjectsPage__link"
     >
       The Matrix clock
-    </Link>
-    <Link
-      to="/people"
-      className="ProjectsPage__link"
-    >
-      Fetching people from server
-    </Link>
-    <Link
-      to="/goods"
-      className="ProjectsPage__link"
-    >
-      Dynamic list of goods
     </Link>
     <a
       href="https://lem47.github.io/react_list-of-goods-hooks/"
@@ -32,6 +44,18 @@ export const ProjectsPage: React.FC = () => (
     >
       List of goods with sorting
     </a>
+    <Link
+      to="/goods"
+      className="ProjectsPage__link"
+    >
+      Dynamic list of goods
+    </Link>
+    <Link
+      to="/people"
+      className="ProjectsPage__link"
+    >
+      Fetching people from server
+    </Link>
     <a
       href="https://lem47.github.io/react_counter/"
       rel="noreferrer"
@@ -39,14 +63,6 @@ export const ProjectsPage: React.FC = () => (
       className="ProjectsPage__link"
     >
       Counter (with funny sound inside)
-    </a>
-    <a
-      href="https://lem47.github.io/loans_chi-software_code-test/"
-      rel="noreferrer"
-      target="_blank"
-      className="ProjectsPage__link"
-    >
-      Loans app
     </a>
     <Link
       to="/slider"
