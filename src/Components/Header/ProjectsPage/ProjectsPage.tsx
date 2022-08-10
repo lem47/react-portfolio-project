@@ -7,6 +7,14 @@ export const ProjectsPage: React.FC = () => (
   <div className="ProjectsPage">
     <h1 className="ProjectsPage__title">React projects:</h1>
     <a
+      href="https://mern-trains-schedule-app.herokuapp.com/"
+      rel="noreferrer"
+      target="_blank"
+      className="ProjectsPage__link"
+    >
+      Trains schedule app (MERN)
+    </a>
+    <a
       href="https://lem47.github.io/delivery-app/"
       rel="noreferrer"
       target="_blank"
